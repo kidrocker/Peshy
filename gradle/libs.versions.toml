@@ -70,8 +70,6 @@ room-ktx = {group = "androidx.room", name="room-ktx", version.ref="room"}
 glide = { group = "com.github.bumptech.glide", name = "compose", version.ref = "glideVersion" }
 
 
-
-
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

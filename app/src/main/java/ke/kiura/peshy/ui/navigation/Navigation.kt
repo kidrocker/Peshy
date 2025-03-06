@@ -1,14 +1,13 @@
 package ke.kiura.peshy.ui.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import ke.kiura.peshy.ui.productDetails.ProductDetailsScreen
 import ke.kiura.peshy.ui.products.ProductListScreen
-import ke.kiura.peshy.ui.products.ProductListViewModel
 
 
 fun NavEvent.navigateTo(navController: NavController, options: NavOptions? = null) {
@@ -32,12 +31,12 @@ fun ProductNavigation() {
             )
         }
 
-        composable<ProductEvent> { backStackEntry ->
-//            ProductDetailsScreen(
-//                navigateTo = {
-//                   it.navigateTo(navController)
-//                }
-//            )
+        composable<ProductEvent> {
+            ProductDetailsScreen(
+                navigateTo = {
+                    it.navigateTo(navController)
+                }
+            )
         }
     }
 }

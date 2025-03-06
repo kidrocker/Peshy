@@ -1,5 +1,6 @@
 
 package ke.kiura.peshy.data.model
+
 data class Product(
     val id: Int,
     val title: String,
