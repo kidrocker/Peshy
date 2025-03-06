@@ -91,4 +91,7 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.room.ktx)
 
+    testImplementation(libs.coroutines.test)
+    testImplementation(libs.mockk)
+
 }

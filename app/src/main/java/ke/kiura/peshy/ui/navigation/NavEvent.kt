@@ -12,9 +12,5 @@ data object ProductsEvent : NavEvent
 
 @Serializable
 data class ProductEvent(
-    val id: Int,
-    val title: String,
-    val description: String,
-    val price: Double,
-    val thumbnail: String
+    val id: Int
 ) : NavEvent
